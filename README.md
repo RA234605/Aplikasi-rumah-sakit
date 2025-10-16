@@ -1,6 +1,6 @@
 # Hospital Web Application RS Parik (Sistem Informasi Rumah Sakit)
 
-**Aplikasi ini dikembangkan untuk [Nama Mata Kuliah/Tujuan Proyek] di [Nama Institusi Anda].**
+**Aplikasi ini kepentingan mengumpulkan tugas. Jangan gunakan untuk production**
 
 ## 1. Deskripsi Proyek
 
