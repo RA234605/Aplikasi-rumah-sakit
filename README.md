@@ -9,17 +9,23 @@ Hospital Web Application RS Parik adalah sebuah aplikasi berbasis website yang d
 1.  **Bagian Publik (Public-facing):** Antarmuka sederhana untuk masyarakat umum.
 2.  **Bagian Staf Internal (Staff-facing):** Sebuah Sistem Informasi Rumah Sakit (**Hospital Information System/HIS**) yang komprehensif.
 
-## 2. Bagian Publik (Public-facing)
+## Batasan
+
+Di bawah akan menjabarkan masing-masing poin, akan tetapi, bagi orang yang tidak peduli terhadap itu, bagian batasan tertulis di sini agar ringkas.
+1. Sistem BPJS dan asuransi-asuransi lainnya akan didesain sebagai mockup.
+### 2. Bagian Publik (Public-facing)
 
 Bagian ini merupakan antarmuka minimal yang ditujukan untuk masyarakat umum. Fitur utamanya berfokus pada penyediaan informasi dasar dan interaksi awal dengan rumah sakit.
 
 | Fitur | Deskripsi |
 | :--- | :--- |
 | **Profil RS** | Informasi kontak, lokasi, dan sejarah singkat RS Parik. |
+| **Profile Dokter** | Profil singkat dokter-dokter RS Parik.|
+| **Press Release** | Berita-berita yang berhubungan dengan rumah sakit. |
 | **Layanan & Poliklinik** | Daftar lengkap layanan dan jam operasional. |
-| **[Fitur Opsional]** | [Contoh: Formulir Pendaftaran Online sederhana, Cek Ketersediaan Kamar]. |
+| **Fitur Lainnya** | Formulir Pendaftaran Online, [Contoh: Formulir Pendaftaran Online sederhana, Cek Ketersediaan Kamar]. |
 
-## 3. Bagian Staf Internal: Hospital Information System (HIS)
+### 3. Bagian Staf Internal: Hospital Information System (HIS)
 
 Bagian ini adalah inti dari aplikasi dan selanjutnya disebut sebagai **Hospital Information System (HIS)**.
 
@@ -30,11 +36,11 @@ HIS adalah platform terintegrasi yang menggabungkan berbagai fungsi administrasi
 
 ---
 
-## 4. Penjabaran Modul-Modul HIS
+### 4. Penjabaran Modul-Modul HIS
 
 HIS terdiri dari beberapa sistem informasi yang lebih spesifik, dikelompokkan berdasarkan fokus fungsionalnya:
 
-### A. Modul Klinis (Clinical Information System/CIS)
+#### A. Modul Klinis (Clinical Information System/CIS)
 
 Modul-modul ini secara langsung mendukung proses dan pengambilan keputusan klinis oleh tenaga medis.
 
@@ -45,7 +51,7 @@ Modul-modul ini secara langsung mendukung proses dan pengambilan keputusan klini
 | **Penunjang Medis** | Mengelola dan mengintegrasikan informasi dari layanan penunjang diagnosis dan terapi (Contoh: Laporan Laboratorium, Hasil Radiologi). |
 | **Order Entry System** | Sistem untuk mencatat dan mengelola pesanan (order) klinis, seperti resep obat (e-Prescribing), permintaan tes laboratorium, atau permintaan konsultasi. |
 
-### B. Modul Administratif dan Operasional
+#### B. Modul Administratif dan Operasional
 
 Modul-modul ini mendukung manajemen operasional harian rumah sakit.
 
@@ -55,7 +61,7 @@ Modul-modul ini mendukung manajemen operasional harian rumah sakit.
 | **Inventory Management** | Melacak **persediaan medis**, **obat-obatan**, dan **peralatan**, memastikan rumah sakit mempertahankan tingkat stok yang memadai dan mengelola sumber daya secara efektif. |
 | **Human Resources Management (HRM)** | Mengelola data kepegawaian staf (dokter, perawat, administrasi), jadwal kerja, cuti, dan penggajian. |
 
-### C. Modul Finansial
+#### C. Modul Finansial
 
 Modul-modul yang berfokus pada siklus pendapatan dan pengelolaan keuangan rumah sakit.
 
