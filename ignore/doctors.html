@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dokter — RS Parik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rumah Sakit Parik</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="services.html">Layanan</a>
+        <a href="doctors.html">Dokter</a>
+        <a href="booking.html">Pendaftaran</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <a class="btn" href="booking.html">Daftar Online</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Dokter & Tenaga Medis</h1>
+    <p>Cari dokter berdasarkan spesialis atau lihat profil singkat berikut.</p>
+    <div style="margin-top:12px;display:flex;gap:12px">
+      <input id="search-doc" placeholder="Cari nama atau spesialis" oninput="filterDoctors()"/>
+      <select id="filter-spec" onchange="filterDoctors()">
+        <option value="">Semua Spesialis</option>
+        <option>Dokter Umum</option>
+        <option>Anak</option>
+        <option>Kandungan</option>
+        <option>Bedah</option>
+      </select>
+    </div>
+
+    <div class="doctors-grid" id="doctors-grid" style="margin-top:16px">
+      <div class="doctor card" data-name="Dr. Anita" data-spec="Anak">
+        <div class="avatar">AS</div>
+        <div>
+          <div class="doc-name">Dr. Mazmur S, Sp.A</div>
+          <div class="doc-meta">Spesialis Anak — Senin, Rabu 09:00 - 12:00</div>
+        </div>
+      </div>
+
+      <div class="doctor card" data-name="Dr. Budi" data-spec="Kandungan">
+        <div class="avatar">BH</div>
+        <div>
+          <div class="doc-name">Dr. Budi H, Sp.OG</div>
+          <div class="doc-meta">Spesialis Kandungan — Selasa, Kamis 10:00 - 14:00</div>
+        </div>
+      </div>
+
+      <div class="doctor card" data-name="Dr. Marisa" data-spec="Bedah">
+        <div class="avatar">C</div>
+        <div>
+          <div class="doc-name">Dr. Marisa, Sp.B</div>
+          <div class="doc-meta">Spesialis Bedah — Jumat 08:00 - 12:00</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner">© 2025 Rumah Sakit Parik · Dikembangkan oleh Jeremi Sitorus</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

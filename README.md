@@ -1,6 +1,6 @@
 # Hospital Web Application RS Parik (Sistem Informasi Rumah Sakit)
 
-**Aplikasi ini kepentingan mengumpulkan tugas. Jangan gunakan untuk production**
+**Aplikasi ini kepentingan mengumpulkan tugas. Jangan gunakan untuk production.**
 
 ## 1. Deskripsi Proyek
 

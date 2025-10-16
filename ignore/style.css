@@ -1,0 +1,41 @@
+:root{
+  --blue-1:#0f4c81;
+  --blue-2:#2b8fd6;
+  --muted:#6b7280;
+  --card-bg: #ffffff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#f7fbff,#eaf6ff);color:#0b2440}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header-inner{display:flex;align-items:center;gap:16px}
+.site-header{position:sticky;top:12px;background:white;border-radius:10px;margin:12px 0;padding:10px 0;box-shadow:0 6px 18px rgba(12,46,84,0.06)}
+.brand{font-weight:800;color:var(--blue-1);text-decoration:none;font-size:18px}
+.main-nav{margin-left:auto;display:flex;gap:12px;align-items:center}
+.main-nav a{text-decoration:none;color:#234;padding:8px 10px;border-radius:8px}
+.btn{padding:8px 12px;border-radius:8px;text-decoration:none;border:0;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--blue-2),var(--blue-1));color:white}
+.btn.ghost{background:transparent;border:1px solid rgba(15,76,129,0.08);color:var(--blue-1)}
+.hero{position:relative;border-radius:12px;overflow:hidden;margin:12px 0;padding:60px 0;background-image:url('images/bg-hospital.jpg');background-size:cover;background-position:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(2,22,39,0.5), rgba(2,22,39,0.5))}
+.hero-inner{position:relative;display:flex;gap:24px;align-items:center}
+.hero-left{color:white;flex:1;padding:24px}
+.hero-left h1{font-size:34px;margin:0 0 12px}
+.hero-left p{color:rgba(230,243,255,0.95);margin:0 0 18px}
+.hero-right{width:360px;flex-shrink:0;background:rgba(255,255,255,0.95);color:#123;padding:16px;border-radius:10px;box-shadow:0 10px 30px rgba(11,36,64,0.12)}
+.card{background:var(--card-bg);border-radius:10px;padding:16px;box-shadow:0 10px 30px rgba(18,52,86,0.06)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sections{margin-top:16px}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.news-card img{width:100%;height:140px;object-fit:cover;border-radius:8px 8px 0 0}
+.news-body{padding:12px}
+.doctors-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.doctor{display:flex;gap:12px;align-items:center}
+.avatar{width:64px;height:64px;border-radius:10px;background:#cfe8ff;display:flex;align-items:center;justify-content:center;color:var(--blue-1);font-weight:800}
+.site-footer{padding:24px;text-align:center;color:var(--muted);margin-top:24px}
+input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8;background:white}
+label{display:block;margin-bottom:8px;font-weight:600;color:#234}
+@media(max-width:900px){
+  .hero-inner{flex-direction:column;padding:22px}
+  .grid-3{grid-template-columns:1fr}
+  .main-nav{display:none}
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RS Parik — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rumah Sakit Parik</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="services.html">Layanan</a>
+        <a href="doctors.html">Dokter</a>
+        <a href="booking.html">Pendaftaran</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <a class="btn" href="booking.html">Daftar Online</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1>Perawatan profesional, penuh empati</h1>
+        <p>IGD 24 jam · Dokter Spesialis · Laboratorium & Radiologi lengkap · Pendaftaran online mudah</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="booking.html">Buat Janji</a>
+          <a class="btn ghost" href="about.html">Tentang Kami</a>
+        </div>
+      </div>
+
+      <aside class="hero-right card">
+        <h3>Buat Janji Singkat</h3>
+        <form id="mini-booking" onsubmit="return miniBooking(event)">
+          <label>Nama</label>
+          <input id="mini-nama" required>
+          <label>Poliklinik</label>
+          <select>
+            <option>Poli Umum</option>
+            <option>Poli Anak</option>
+            <option>Poli Kandungan</option>
+          </select>
+          <label>Tanggal</label>
+          <input type="date" required>
+          <div style="margin-top:10px">
+            <button class="btn primary" type="submit">Kirim</button>
+            <a class="btn ghost" href="booking.html">Detail Pendaftaran</a>
+          </div>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="sections">
+      <div class="grid-3">
+        <article class="card">
+          <h4>IGD 24 Jam</h4>
+          <p>Layanan kegawatdaruratan dengan tenaga terlatih dan ambulans siap.</p>
+        </article>
+        <article class="card">
+          <h4>Rawat Jalan</h4>
+          <p>Poliklinik umum & spesialis dengan jadwal dokter teratur.</p>
+        </article>
+        <article class="card">
+          <h4>MCU</h4>
+          <p>Paket Medical Check-Up untuk individu dan perusahaan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" style="margin-top:28px">
+      <h2>Berita & Pengumuman</h2>
+      <div class="news-grid">
+        <div class="news-card card">
+          <img src="images/bg-hospital.jpg" alt="vaksin" style="height:140px;object-fit:cover">
+          <div class="news-body">
+            <h4>Jadwal Vaksinasi Gratis</h4>
+            <p>Vaksinasi akan diadakan pada 5 November 2025 — daftar melalui pendaftaran online.</p>
+          </div>
+        </div>
+        <div class="news-card card">
+          <img src="images/doctor1.jpg" alt="mcupromo" style="height:140px;object-fit:cover">
+          <div class="news-body">
+            <h4>Promo Medical Check-Up Perusahaan</h4>
+            <p>Paket korporat tersedia untuk pemeriksaan tahunan karyawan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 Rumah Sakit Parik · Dikembangkan oleh Jeremi Sitorus</div>
+      <div>Desa Parik Kec.Uluan Kab.Toba     — Telp: (62+) 812-6249-1255</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

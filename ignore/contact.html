@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontak — RS Parik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html">Rumah Sakit Parik</a><nav class="main-nav"><a href="index.html">Home</a><a href="about.html">Tentang</a><a href="services.html">Layanan</a><a href="doctors.html">Dokter</a><a href="booking.html">Pendaftaran</a><a href="contact.html">Kontak</a></nav><a class="btn" href="booking.html">Daftar Online</a></div></header>
+
+  <main class="container">
+    <h1>Kontak Kami</h1>
+    <div class="card">
+      <h4>Alamat</h4>
+      <p>Desa Parik Kec.Uluan Kab.Toba  — 12345</p>
+      <h4>Telepon</h4>
+      <p>IGD: (62+) 82183095570 — Pendaftaran: (62+) 81262491255</p>
+
+      <h4>Form Kontak</h4>
+      <form id="contact-form" onsubmit="return submitContact(event)">
+        <label>Nama</label>
+        <input id="cname" required />
+        <label>Email</label>
+        <input id="cemail" type="email" required />
+        <label>Pesan</label>
+        <textarea id="cmsg" rows="4" required></textarea>
+        <div style="margin-top:10px"><button class="btn primary" type="submit">Kirim Pesan</button></div>
+      </form>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h4>Lokasi</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner">© 2025 Rumah Sakit Parik · Dikembangkan oleh Jeremi Sitorus</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
